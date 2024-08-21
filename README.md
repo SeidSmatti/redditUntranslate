@@ -14,7 +14,7 @@
 ## Installation
 
 ### Mozilla and Chrome Web Store
-1. [Mozilla Addons](https://addons.mozilla.org/fr/firefox/addon/reddituntranslte/)
+1. [Mozilla Addons](https://addons.mozilla.org/fr/firefox/addon/reddituntranslate/)
 2. Chrome Web Store (Currently being reviewed)
 
 ### To install the extension directly from GitHub (for testing only):
