@@ -1,0 +1,31 @@
+# Ignore node_modules directory if using Node.js for any reason
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore package files (if you're using npm/yarn)
+package-lock.json
+yarn.lock
+
+# Ignore any backups or temporary files
+*.bak
+*.tmp
+
+# Ignore compressed files
+*.zip
+
+# Ignore IDE or editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore any other unnecessary files or directories
+dist/
+build/
+

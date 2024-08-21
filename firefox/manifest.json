@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "redditUntranslate",
+  "version": "1.0",
+  "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string and effectively disabling the auto translation.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "https://www.reddit.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "reddit-url-redirector@kichkoupi.com",
+      "strict_min_version": "58.0"
+    }
+  }
+}
+
