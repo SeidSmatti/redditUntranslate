@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "redditUntranslate",
-  "version": "1.0",
-  "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string and effectively disabling the auto translation.",
+  "version": "1.1",
+  "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string.",
   "permissions": [
     "webRequest",
     "webRequestBlocking",
