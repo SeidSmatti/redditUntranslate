@@ -5,17 +5,12 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "transform": {
-          "queryTransform": {
-            "removeParams": ["tl"]
-          }
-        }
+        "regexSubstitution": "\\1"
       }
     },
     "condition": {
-      "urlFilter": "||reddit.com",
+      "regexFilter": "^https://(www\\.|old\\.|)reddit\\.com/[^?]*(\\?tl=[^&]*(&.*)?)?$",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   }
 ]
-
