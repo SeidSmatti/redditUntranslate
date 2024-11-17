@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Reddit Untranslate",
-  "version": "1.0",
-  "description": "An extension to untranslate Reddit URLs",
+  "version": "1.2",
+  "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string.",
   "icons": {
     "48": "icon.png"
   },
@@ -14,9 +14,7 @@
     "declarativeNetRequestWithHostAccess",
     "declarativeNetRequestFeedback"
   ],
-  "host_permissions": [
-    "https://www.reddit.com/*"
-  ],
+  "host_permissions": ["https://*.reddit.com/*"],
   "declarative_net_request": {
     "rule_resources": [{
       "id": "ruleset_1",
