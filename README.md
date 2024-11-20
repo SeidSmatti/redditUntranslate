@@ -54,7 +54,7 @@ This extension requires the following permissions:
 - **`declarativeNetRequest`**: To intercept and modify network requests, ensuring the removal of language parameters from Reddit URLs.
 - **`declarativeNetRequestWithHostAccess`**: To apply the redirection rules specifically to Reddit URLs.
 - **`declarativeNetRequestFeedback`**: To monitor and ensure that the redirection rules are functioning as intended.
-- **Host Access to `https://www.reddit.com/*`**: This is necessary to apply the modifications only to Reddit URLs.
+- **Host Access to `https://*.reddit.com/*`**: This is necessary to apply the modifications only to Reddit URLs.
 
 ## Privacy
 
