@@ -3,7 +3,7 @@
 
 ## Overview
 
-**redditUntranslate** is a Chrome extension designed to remove language parameters automatically added to Reddit URLs, ensuring that users are redirected to the original, untranslated version of the site. This extension is particularly useful for users who prefer browsing Reddit in its default language without any automatic translations.
+**redditUntranslate** removes language parameters that are automatically added to Reddit URLs, ensuring direction to original, non-translated content. This extension is particularly useful for users who prefer browsing Reddit in their default language without automatic translation.
 
 ## Features
 
@@ -14,7 +14,7 @@
 ## Installation
 
 ### Mozilla and Chrome Web Store
-1. [Mozilla Addons](https://addons.mozilla.org/fr/firefox/addon/reddituntranslate/)
+1. [Mozilla Addons](https://addons.mozilla.org/addon/reddituntranslate/)
 2. [Chrome Web Store](https://chromewebstore.google.com/detail/reddit-untranslate/eninkmbmgkpkcelmohdlgldafpkfpnaf)
 
 ### To install the extension directly from GitHub (for testing only):
@@ -45,7 +45,7 @@ The extension should now be installed temporarily. Note that it will be removed 
 
 ## Usage
 
-Once installed, the Reddit Untranslate extension works automatically. Simply navigate to any Reddit URL, and the extension will remove any language parameters, redirecting you to the original version of the site.
+Once installed, redditUntranslate works automatically. Simply browse to any Reddit URL, the extension will remove any language parameters, directing you to the original version of the site.
 
 ## Permissions
 
