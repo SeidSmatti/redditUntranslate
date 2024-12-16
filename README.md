@@ -45,7 +45,7 @@ The extension should now be installed temporarily. Note that it will be removed 
 
 ## Usage
 
-Once installed, redditUntranslate works automatically. Simply browse to any Reddit URL, the extension will remove any language parameters, directing you to the original version of the site.
+Once installed, redditUntranslate works automatically. Simply browse to any Reddit URL, the extension will remove any language parameters, redirecting you to the original version of the site.
 
 ## Permissions
 
