@@ -3,7 +3,7 @@
 
 ## Overview
 
-**redditUntranslate** removes language parameters that are automatically added to Reddit URLs, ensuring direction to original, non-translated content. This extension is particularly useful for users who prefer browsing Reddit in their default language without automatic translation.
+**redditUntranslate** removes language parameters that are automatically added to Reddit URLs, ensuring redirection to original, non-translated content. This extension is particularly useful for users who prefer browsing Reddit in their default language without automatic translation.
 
 ## Features
 
