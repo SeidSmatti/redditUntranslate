@@ -43,22 +43,26 @@ s
 
 The extension should now be installed temporarily. Note that it will be removed when you restart Firefox, so repeat these steps if needed.
 
+
 ## Usage
 
 Once installed, redditUntranslate works automatically. Simply browse to any Reddit URL, the extension will remove any language parameters, redirecting you to the original version of the site.
+
 
 ## Permissions
 
 This extension requires the following permissions:
 
 - **`declarativeNetRequest`**: To intercept and modify network requests, ensuring the removal of language parameters from Reddit URLs.
-- **`declarativeNetRequestWithHostAccess`**: To apply the redirection rules specifically to Reddit URLs.
-- **`declarativeNetRequestFeedback`**: To monitor and ensure that the redirection rules are functioning as intended.
 - **Host Access to `https://*.reddit.com/*`**: This is necessary to apply the modifications only to Reddit URLs.
 
+    
 ## Privacy
 
 The redditUntranslate extension does not collect, store, or transmit any personal data. All URL processing is done locally on your device.
+
+## What's new
+- 18/04/2024 (2.0) : Rewritten on Manifest V3—now one cross‑browser build with a single queryTransform rule, no background script, no duplicate manifests, and only one permission (declarativeNetRequest).
 
 
 ## License
