@@ -28,4 +28,4 @@ yarn.lock
 # Ignore any other unnecessary files or directories
 dist/
 build/
-
+_metadata/
