@@ -1,5 +1,4 @@
-{
-  "manifest_version": 3,
+{ "manifest_version": 3,
   "name": "Reddit Untranslate",
   "version": "2.0.0",
   "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string.",
@@ -23,5 +22,11 @@
         "path": "rules.json"
       }
     ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "reddit-url-redirector@kichkoupi.com",   
+      "strict_min_version": "113.0"            
+    }
   }
 }
