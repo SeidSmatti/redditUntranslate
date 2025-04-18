@@ -14,7 +14,7 @@
 ## Installation
 
 ### Mozilla and Chrome Web Store
-1. [Mozilla Addons](https://addons.mozilla.org/addon/reddituntranslate/) (Also work on the android version of Firefox)
+1. [Mozilla Addons](https://addons.mozilla.org/addon/reddituntranslate/) (Also works on the android version of Firefox)
 2. [Chrome Web Store](https://chromewebstore.google.com/detail/reddit-untranslate/eninkmbmgkpkcelmohdlgldafpkfpnaf)
 
 ### To install the extension directly from GitHub (for testing only):
