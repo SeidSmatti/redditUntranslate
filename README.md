@@ -5,6 +5,25 @@
 
 **redditUntranslate** removes language parameters that are automatically added to Reddit URLs, ensuring redirection to original, non-translated content. This extension is particularly useful for users who prefer browsing Reddit in their default language without automatic translation.
 
+### Repository structure 
+```text
+├── extension          # Code for current build
+│   ├── icon.png
+│   ├── manifest.json
+│   └── rules.json
+├── legacy             # Code for older builds
+│   ├── chrome
+│   │   ├── background.js
+│   │   ├── icon.png
+│   │   ├── manifest.json
+│   │   └── rules.json
+│   └── firefox
+│       ├── background.js
+│       ├── icon.png
+│       └── manifest.json
+├── LICENSE
+└── README.md
+```
 ## Features
 
 - **Automatic URL Redirection**: Strips out the language parameters (`?tl=...`) from Reddit URLs.
