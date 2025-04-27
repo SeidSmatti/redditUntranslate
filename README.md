@@ -81,6 +81,7 @@ This extension requires the following permissions:
 
 - **`declarativeNetRequest`**: To intercept and modify network requests, ensuring the removal of language parameters from Reddit URLs.
 - **Host Access to `https://*.reddit.com/*`**: This is necessary to apply the modifications only to Reddit URLs.
+- **Host Access to `https://google.com/*`** : This is used in the optional google filter to add the ignore string.
 
     
 ## Privacy
@@ -88,7 +89,8 @@ This extension requires the following permissions:
 The redditUntranslate extension does not collect, store, or transmit any personal data. All URL processing is done locally on your device.
 
 ## What's new
-- 18/04/2024 (2.0) : Rewritten on Manifest V3—now one cross‑browser build with a single queryTransform rule, no background script, no duplicate manifests, and only one permission (declarativeNetRequest).
+- 18/04/2025 (2.0) : Rewritten on Manifest V3—now one cross‑browser build with a single queryTransform rule, no background script, no duplicate manifests, and only one permission (declarativeNetRequest).
+- 27/04/2025 (2.1) : Added a Google filter in the form of an optional toggle that filters out translated Reddit pages from Google search results.
 
 
 ## License
