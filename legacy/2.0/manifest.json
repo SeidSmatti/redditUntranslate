@@ -1,0 +1,32 @@
+{ "manifest_version": 3,
+  "name": "Reddit Untranslate",
+  "version": "2.0.0",
+  "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string.",
+  "icons": {
+    "48":  "icon.png"
+  },
+
+  "action": {
+    "default_title": "Reddit Untranslate"
+  },
+
+  "permissions": ["declarativeNetRequest"],
+
+  "host_permissions": ["https://*.reddit.com/*"],
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "core",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "reddit-url-redirector@kichkoupi.com",   
+      "strict_min_version": "113.0"            
+    }
+  }
+}

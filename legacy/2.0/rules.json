@@ -2,6 +2,7 @@
   {
     "id": 1,
     "priority": 1,
+
     "action": {
       "type": "redirect",
       "redirect": {
@@ -12,6 +13,7 @@
         }
       }
     },
+
     "condition": {
       "urlFilter": "||reddit.com^",
       "resourceTypes": ["main_frame","sub_frame"]

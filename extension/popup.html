@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Extension Settings</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 1em;
+      }
+      label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      input[type="checkbox"] {
+        margin-right: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Extension Settings</h2>
+    <label>
+      <input type="checkbox" id="enableGoogleAppender" />
+      Append <code>-inurl:?tl=</code> to Google Searches
+    </label>
+
+    <!-- Link to popup logic -->
+    <script src="popup.js"></script>
+  </body>
+</html>

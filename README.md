@@ -1,32 +1,39 @@
-
 # redditUntranslate Extension
 
 ## Overview
 
-**redditUntranslate** removes language parameters that are automatically added to Reddit URLs, ensuring redirection to original, non-translated content. This extension is particularly useful for users who prefer browsing Reddit in their default language without automatic translation.
+**redditUntranslate** removes language parameters that are automatically added to Reddit URLs, ensuring redirection to original, non-translated content. This extension is particularly useful for users who prefer browsing Reddit in their default language without automatic translation. It also provides an ***optional*** toggle that adds ``-inurl:?tl=`` at the end of every google search to ignore the translated pages.
 
 ### Repository structure 
 ```text
 ├── extension          # Code for current build
+│   ├── content_script.js
 │   ├── icon.png
 │   ├── manifest.json
+│   ├── popup.html
+│   ├── popup.js
 │   └── rules.json
 ├── legacy             # Code for older builds
-│   ├── chrome
+│   ├── 1.x_chrome
 │   │   ├── background.js
 │   │   ├── icon.png
 │   │   ├── manifest.json
 │   │   └── rules.json
-│   └── firefox
-│       ├── background.js
+│   ├── 1.x_firefox
+│   │   ├── background.js
+│   │   ├── icon.png
+│   │   └── manifest.json
+│   └── 2.0
 │       ├── icon.png
-│       └── manifest.json
+│       ├── manifest.json
+│       └── rules.json
 ├── LICENSE
 └── README.md
 ```
 ## Features
 
 - **Automatic URL Redirection**: Strips out the language parameters (`?tl=...`) from Reddit URLs.
+- **Optional Google filtering** : Adds a string that makes Google ignore the translated Reddit pages.
 - **Lightweight and Efficient**: The extension operates seamlessly in the background with minimal impact on browsing performance.
 - **Privacy-Focused**: No data is collected or stored; the extension only processes URLs locally.
 
@@ -65,7 +72,7 @@ The extension should now be installed temporarily. Note that it will be removed 
 
 ## Usage
 
-Once installed, redditUntranslate works automatically. Simply browse to any Reddit URL, the extension will remove any language parameters, redirecting you to the original version of the site.
+Once installed, redditUntranslate works automatically. Simply browse to any Reddit URL, the extension will remove any language parameters, redirecting you to the original version of the site. You can enable the optional Google filtering in the extension popup.
 
 
 ## Permissions

@@ -1,18 +1,26 @@
-{ "manifest_version": 3,
-  "name": "Reddit Untranslate",
-  "version": "2.0.0",
-  "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string.",
+{
+  "manifest_version": 3,
+  "name": "Reddit Untranslate",
+  "version": "2.1.0",
+  "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string + optional toggle for Google query modification",
   "icons": {
-    "48":  "icon.png"
+    "48": "icon.png"
   },
 
   "action": {
-    "default_title": "Reddit Untranslate"
+    "default_popup": "popup.html",
+    "default_title": "Extension Settings"
   },
 
-  "permissions": ["declarativeNetRequest"],
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+  ],
 
-  "host_permissions": ["https://*.reddit.com/*"],
+  "host_permissions": [
+    "https://*.reddit.com/*",
+    "https://www.google.com/*"
+  ],
 
   "declarative_net_request": {
     "rule_resources": [
@@ -23,10 +31,19 @@
       }
     ]
   },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/search*"],
+      "js": ["content_script.js"],
+      "run_at": "document_start"
+    }
+  ],
+
   "browser_specific_settings": {
     "gecko": {
-      "id": "reddit-url-redirector@kichkoupi.com",   
-      "strict_min_version": "113.0"            
+      "id": "reddit-url-redirector@kichkoupi.com",
+      "strict_min_version": "113.0"
     }
   }
 }
