@@ -99,4 +99,8 @@ This project is licensed under the GNU General Public License v3.0. See the [LIC
 
 An asset of the logo is from [Freepik](https://fr.freepik.com/)
 
+## Support me
 
+This project is most likely done, but if you want to support (potential) new ideas you can :
+
+a href="https://www.buymeacoffee.com/seidsmatti" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
