@@ -103,4 +103,6 @@ An asset of the logo is from [Freepik](https://fr.freepik.com/)
 
 This project is most likely done, but if you want to support (potential) new ideas you can :
 
-a href="https://www.buymeacoffee.com/seidsmatti" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://www.buymeacoffee.com/seidsmatti">
+  <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=yourusername&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" />
+</a>
