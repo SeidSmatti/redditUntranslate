@@ -1,0 +1,8 @@
+---
+name: redditUntranslate
+description: Removes translated Reddit pages from search results.
+homepage: https://github.com/SeidSmatti/redditUntranslate
+---
+
+*://*.reddit.com/*?tl=*
+*://*.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*?tl=*
