@@ -2,7 +2,7 @@
 
 ## Overview
 
-**redditUntranslate** removes language parameters that are automatically added to Reddit URLs, ensuring redirection to original, non-translated content. This extension is particularly useful for users who prefer browsing Reddit in their default language without automatic translation. It also provides an ***optional*** toggle that adds ``-inurl:?tl=`` at the end of every google search to ignore the translated pages.
+**redditUntranslate** removes language parameters that are automatically added to Reddit URLs, ensuring redirection to original, non-translated content. This extension is particularly useful for users who prefer browsing Reddit in their default language without automatic translation. It also provides an ***optional*** toggle that adds `-inurl:?tl=` at the end of every Google search to ignore the translated pages.
 
 ### Repository structure 
 ```text
@@ -92,6 +92,23 @@ The redditUntranslate extension does not collect, store, or transmit any persona
 - 18/04/2025 (2.0) : Rewritten on Manifest V3—now one cross‑browser build with a single queryTransform rule, no background script, no duplicate manifests, and only one permission (declarativeNetRequest).
 - 27/04/2025 (2.1) : Added a Google filter in the form of an optional toggle that filters out translated Reddit pages from Google search results.
 
+## Blocklists
+
+This extension's function can also be achieved by subscribing to the following blocklists for ad blockers and search blockers.
+
+### Ad blockers
+
+Ad blockers such as [uBlock Origin](https://ublockorigin.com) or [Adguard](https://adguard.com) can also remove the `?tl=` parameter from Reddit URLs. Subscribing to this blocklist replicates the main untranslation feature of the full redditUntranslate extension
+
+[Blocklist in AdBlock format.](https://raw.githubusercontent.com/SeidSmatti/redditUntranslate/main/adblock.txt)
+
+### Search blockers (`-inurl:?tl=`)
+
+The [uBlacklist](https://github.com/iorate/ublacklist) browser extension removes sites from search engine results. Subscribing to this blocklist replicates the `-inurl:?tl=` option from the full redditUntranslate extension.
+
+[Blocklist for uBlacklist.](https://raw.githubusercontent.com/SeidSmatti/redditUntranslate/main/ublacklist.txt)
+
+[Click here to subscribe on Chrome.](https://iorate.github.io/ublacklist/subscribe?name=redditUntranslate&url=https://raw.githubusercontent.com/SeidSmatti/redditUntranslate/main/ublacklist.txt)  (This automatic subscription link is only compatible with Chrome, you have to add it by yourself on other browsers!)
 
 ## License
 
