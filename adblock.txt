@@ -3,4 +3,4 @@
 ! Expires: 7 days
 ! Homepage: https://github.com/SeidSmatti/redditUntranslate
 
-$removeparam=tl,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+$removeparam=tl,domain=reddit.com
