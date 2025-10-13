@@ -1,15 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const checkbox = document.getElementById("enableGoogleAppender");
+  const enableGoogleAppender = document.getElementById("enableGoogleAppender");
+  const onlyModifyRedditSearches = document.getElementById("onlyModifyRedditSearches");
 
   // Load saved preference
-  chrome.storage.local.get(["googleAppenderEnabled"], (data) => {
+  chrome.storage.local.get(["googleAppenderEnabled", "onlyModifyRedditSearches"], (data) => {
     // If not set before, data.googleAppenderEnabled might be undefined
     // so we convert it to a boolean
-    checkbox.checked = data.googleAppenderEnabled === true;
+    enableGoogleAppender.checked = data.googleAppenderEnabled === true;
+    onlyModifyRedditSearches.checked = data.onlyModifyRedditSearches === true;
   });
 
   // Update preference when user toggles checkbox
-  checkbox.addEventListener("change", () => {
-    chrome.storage.local.set({ googleAppenderEnabled: checkbox.checked });
+  enableGoogleAppender.addEventListener("change", () => {
+    chrome.storage.local.set({ googleAppenderEnabled: enableGoogleAppender.checked });
+  });
+
+  onlyModifyRedditSearches.addEventListener("change", () => {
+    chrome.storage.local.set({ onlyModifyRedditSearches: onlyModifyRedditSearches.checked });
   });
 });
