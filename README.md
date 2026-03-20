@@ -27,6 +27,8 @@
 │       ├── icon.png
 │       ├── manifest.json
 │       └── rules.json
+├── adblock.txt      # Redirection ruleset for ad blockers
+├── ublacklist.txt   # Search filtering ruleset for uBlacklist
 ├── LICENSE
 └── README.md
 ```
@@ -94,21 +96,23 @@ The redditUntranslate extension does not collect, store, or transmit any persona
 
 ## Blocklists
 
-This extension's function can also be achieved by subscribing to the following blocklists for ad blockers and search blockers.
+This extension's features are also available by subscribing to the following blocklists for ad blockers and uBlacklist.
 
-### Ad blockers
+### Redirection with ad blockers
 
-Ad blockers such as [uBlock Origin](https://ublockorigin.com) or [Adguard](https://adguard.com) can also remove the `?tl=` parameter from Reddit URLs. Subscribing to this blocklist replicates the main untranslation feature of the full redditUntranslate extension
+Subscribing to this blocklist on ad blockers such as [uBlock Origin](https://ublockorigin.com) or [Adguard](https://adguard.com) replicates the main automatic redirection feature by removing the `?tl=` language parameter from Reddit URLs.
 
 [Blocklist in AdBlock format.](https://raw.githubusercontent.com/SeidSmatti/redditUntranslate/main/adblock.txt)
 
-### Search blockers (`-inurl:?tl=`)
+[Click here to subscribe.](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/SeidSmatti/redditUntranslate/main/adblock.txt)
 
-The [uBlacklist](https://github.com/iorate/ublacklist) browser extension removes sites from search engine results. Subscribing to this blocklist replicates the `-inurl:?tl=` option from the full redditUntranslate extension.
+### Search filtering with uBlacklist
+
+Subscribing to this blocklist with [uBlacklist](https://github.com/iorate/ublacklist) browser extension replicates the `site:reddit.com -inurl:?tl=` filtering option on [several search engines](https://github.com/iorate/ublacklist?tab=readme-ov-file#supported-search-engines).
 
 [Blocklist for uBlacklist.](https://raw.githubusercontent.com/SeidSmatti/redditUntranslate/main/ublacklist.txt)
 
-[Click here to subscribe on Chrome.](https://iorate.github.io/ublacklist/subscribe?name=redditUntranslate&url=https://raw.githubusercontent.com/SeidSmatti/redditUntranslate/main/ublacklist.txt)  (This automatic subscription link is only compatible with Chrome, you have to add it by yourself on other browsers!)
+[Click here to subscribe.](https://ublacklist.github.io/rulesets/subscribe?url=https://raw.githubusercontent.com/SeidSmatti/redditUntranslate/main/ublacklist.txt) Note that subscription links need to be enabled for this to work.
 
 ## License
 
